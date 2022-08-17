@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282F47"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ProgressPhotoTakerDialogFragment">
+
+    <Button
+        android:id="@+id/btnTakePhotoProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/ubuntubold"
+        android:text="@string/take_photo"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnTakeGalleryProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnTakePhotoProgress"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/ubuntubold"
+        android:text="@string/gallery"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageViewProgress"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/btnTakePhotoProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>

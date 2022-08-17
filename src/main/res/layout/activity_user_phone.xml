@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperuseremail"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".ActivityUserPhone">
+
+    <!-- קו טעינה של הדף ביחס לסוף תהליך אסיפת הנתונים-->
+    <View
+        android:layout_width="360dp"
+        android:layout_height="8dp"
+        android:background="#FBDE4B" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1" />
+
+    <!--בלוק טקסט-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/user_phone_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubunturegular"
+                android:gravity="center"
+                android:text="@string/one_more_step"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <!--קו הפרדה של הטקסט-->
+            <View
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#F1D85D" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <!--תיבת טקסט להכנסת מייל משתמש-->
+            <EditText
+                android:id="@+id/userPhoneInput"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubunturegular"
+                android:gravity="center"
+                android:hint="@string/insert_your_phone_number"
+                android:inputType="phone"
+                android:textColor="#F1D85D"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" />
+
+    <!--בלוק טקסט של כפתור - כפתור עגול נעשה בדף חיצוני-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="2.5">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.44" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <!-- כפתור ליצירת משתמש-->
+            <Button
+                android:id="@+id/btnWelcomePhone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/send_sms"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+    </LinearLayout>
+
+</LinearLayout>

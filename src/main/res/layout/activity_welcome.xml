@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperdefault"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".Welcome">
+
+    <!-- קו טעינה של הדף ביחס לסוף תהליך אסיפת הנתונים-->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="8dp"
+        android:background="#FBDE4B" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.4" />
+
+    <!--בלוק טקסט-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/welcome_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:fontFamily="@font/ubunturegular"
+                android:text="@string/achieve_maximum_ngoals_in_minimum_neffort"
+                android:textColor="#FBDE4B"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4" />
+            <!--קו הפרדה של הטקסט-->
+            <View
+                android:layout_width="220dp"
+                android:layout_height="3dp"
+                android:background="#F1D85D" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/ubunturegular"
+                android:text="@string/in_less_than_2_minutes_nwe_will_build_you_a_custom_nmenu_to_fuel_your_muscles"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--בלוק טקסט של כפתור - כפתור עגול נעשה בדף חיצוני-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="2.5">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <!--            כפתור המשך לדף הבא-->
+            <Button
+                android:id="@+id/btnWelcomeLetsGo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/lets_go"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

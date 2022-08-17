@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/icHome"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icDiary"
+        android:icon="@drawable/ic_diary"
+        android:title="Diary"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icProgress"
+        android:icon="@drawable/ic_progress"
+        android:title="Progress"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icMore"
+        android:icon="@drawable/ic_more_dots"
+        android:title="More"
+        app:showAsAction="always" />
+
+</menu>

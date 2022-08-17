@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapergender"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".ActivityGender">
+
+    <!-- קו טעינה של הדף ביחס לסוף תהליך אסיפת הנתונים-->
+    <View
+        android:layout_width="80dp"
+        android:layout_height="8dp"
+        android:background="#FBDE4B" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <!--בלוק טקסט-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:fontFamily="@font/ubunturegular"
+                android:gravity="center"
+                android:text="@string/great_so_let_s_get_nstarted_with_the_nbasics"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+            <!--קו הפרדה של הטקסט-->
+            <View
+                android:layout_gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:background="#F1D85D" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--בלוק טקסט של כפתור - כפתור עגול נעשה בדף חיצוני-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="2.5">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.44" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <!--            כפתור המשך לדף הבא-->
+            <Button
+                android:id="@+id/btnWelcomeMale"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:tag="@string/male"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6" />
+
+            <Button
+                android:id="@+id/btnWelcomeFemale"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/female"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

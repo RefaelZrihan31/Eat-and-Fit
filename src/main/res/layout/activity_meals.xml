@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapermeals"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".ActivityMeals">
+
+    <!-- קו טעינה של הדף ביחס לסוף תהליך אסיפת הנתונים-->
+    <View
+        android:layout_width="320dp"
+        android:layout_height="8dp"
+        android:background="#FBDE4B" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <!--בלוק טקסט-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical"
+            android:weightSum="1.2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubunturegular"
+                android:gravity="center"
+                android:text="@string/how_many_meals_do_you_nprefer_to_eat_per_day"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp" />
+
+            <!--קו הפרדה של הטקסט-->
+            <View
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#F1D85D" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6" />
+    <!--בלוק טקסט של כפתור - כפתור עגול נעשה בדף חיצוני-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:weightSum="2.5">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.44" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            android:weightSum="7.5">
+
+
+            <Button
+                android:id="@+id/btnWelcomeThreeMeals"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/_3_meals"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+
+            <Button
+                android:id="@+id/btnWelcomeFiveMeals"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/_5_meals"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+
+            <Button
+                android:id="@+id/btnWelcomeSevenMeals"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/_7_meals"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+
+            <Button
+                android:id="@+id/btnWelcomeCoachDecide"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/ubuntubold"
+                android:text="@string/let_our_coach_to_decide"
+                android:textColor="@color/black"
+                android:textSize="16.5sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
